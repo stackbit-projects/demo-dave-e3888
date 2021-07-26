@@ -123,6 +123,10 @@ models:
     label: Footer Configuration
     labelField: content
     fields:
+      - type: string
+        name: content
+        label: Footer Content
+        description: The copyright text displayed in the footer.
       - type: list
         name: links
         label: Links
@@ -131,10 +135,6 @@ models:
           type: model
           models:
             - action
-      - type: string
-        name: content
-        label: Footer Content
-        description: The copyright text displayed in the footer.
       - type: boolean
         name: has_social
         label: Enable Social Links
